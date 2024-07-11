@@ -7,6 +7,35 @@
     <title>Cookies en JS</title>
   </head>
   <body>
+    <div class="cookie-container">
+      <h1 class="cookie-title">🍪 Création de <span>COOKIES</span></h1>
+
+      <form class="cookie-form">
+        <div class="cookie-form__input">
+          <label for="cookie-name">Son nom</label>
+          <input type="text" id="cookie-name" autocomplete="off" required />
+        </div>
+
+        <div class="cookie-form__input">
+          <label for="cookie-value">Sa valeur</label>
+          <input type="text" id="cookie-value" />
+        </div>
+
+        <div class="cookie-form__button">
+          <button class="cookie-form__button-create" type="submit">
+            Créer
+          </button>
+          <button class="cookie-form__button-display" type="button">
+            Afficher
+          </button>
+        </div>
+      </form>
+
+      <p class="cookie-info"></p>
+      <ul class="cookie-list"></ul>
+    </div>
+
+    <div class="cookie-toasts"></div>
     <script src="script.js"></script>
   </body>
 </html>
