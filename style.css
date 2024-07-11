@@ -64,19 +64,76 @@ body {
   padding-inline: 20px;
   padding-block: 10px;
   font-size: clamp(14px, 1.8vw, 18px);
-  color: #e0dffe;
-  background-color: #5b5bd6;
+  color: #13131e;
+  background-color: #ffc53d;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 .cookie-form__button button:hover {
-  background-color: #4747d1;
+  background-color: #f5ab00;
 }
 
 .cookie-info {
   font-size: clamp(14px, 1.8vw, 18px);
   text-align: center;
   margin-block-start: 20px;
+}
+
+.cookie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  font-size: clamp(25px, 4vw, 40px);
+  list-style-type: none;
+  margin-block: 10px;
+  margin-inline: auto;
+  padding-block: 5px;
+}
+.cookie-list li {
+  position: relative;
+  font-size: clamp(14px, 1.8vw, 18px);
+  color: #e0dffe;
+  padding-inline: 10px;
+  padding-block: 10px;
+  border: 1px solid #5b5bd6;
+  border-radius: 5px;
+  background-color: #202248;
+}
+.cookie-list li p {
+  margin-inline: 10px;
+}
+.cookie-list li span {
+  font-weight: 600;
+}
+.cookie-list li button {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  background-color: #e54666;
+  font-size: clamp(10px, 1.2vw, 12px);
+  font-weight: 900;
+  color: #13131e;
+  inline-size: 30px;
+  block-size: 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.cookie-toasts {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.cookie-toasts__info {
+  min-inline-size: 150px;
+  font-size: clamp(13px, 1.7vw, 17px);
+  font-weight: 600;
+  color: #13131e;
+  padding-inline: 10px;
+  padding-block: 10px;
+  margin-block: 10px;
+  border-radius: 3px;
 }
